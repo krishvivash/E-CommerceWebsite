@@ -266,7 +266,7 @@ FEATURES
     cursor: not-allowed;
 }
 
-.book_ratings{
+.book__ratings{
     margin-bottom: 8px;
     color: #fabf2a;
 }
@@ -275,6 +275,18 @@ FEATURES
     text-decoration: line-through;
     padding-right: 6px;
     color: #bfbfbf;
+}
+
+/* 
+
+RECENT
+
+*/
+
+.recent__books{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 
