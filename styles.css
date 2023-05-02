@@ -34,7 +34,6 @@ p{
 
 a{
     text-decoration: none;
-    color: white;
 }
 
 a:hover{
@@ -49,7 +48,6 @@ a:hover{
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    
 }
 
 .purple{
@@ -89,6 +87,56 @@ li{
 .nav__link--primary:hover{
     text-decoration: none;
 }
+
+.btn__menu{
+    background-color: transparent;
+    font-size: 40px;
+    text-align: center;
+    border: none;
+    color: #7342d6;
+}
+
+.menu__backdrop{
+    position: absolute;
+    background-color: #242424;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu__list{
+    padding: 32px 0;
+}
+
+.menu__link{
+    font-size: 40px;
+    color: white;
+}
+
+.btn__menu--close{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    padding: 8px;
+    color: white;
+}
+
+/* 
+
+LANDING
+
+*/
 
 
 #landing{
@@ -207,6 +255,7 @@ HIGHLIGHTS
 
 .highlight__wrapper{
     display: flex;
+    justify-content: space-around;
 }
 
 .highlight{
@@ -348,7 +397,7 @@ footer{
     filter: grayscale(1) invert(1);
 }
 
-.footer--link,
+.footer__link,
 .footer__copyright{
     color: #fff;
 }
