@@ -270,7 +270,7 @@ HIGHLIGHTS
 
 .highlight__wrapper{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .highlight{
@@ -278,7 +278,6 @@ HIGHLIGHTS
     width: calc(100 / 3);
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
 }
 
@@ -312,56 +311,57 @@ FEATURES
 
 */
 
-#features{
-    padding-top: 8vw;
-    background-color: rgba(115,66,214,0.1);
+#features {
+  padding-top: 8vw;
+  background-color: rgba(115, 66, 214, 0.1);
 }
 
-.books{
-    display: flex;
+.books {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.book{
-    width: 25%;
-    padding: 24px;
+.book {
+  width: 25%;
+  padding: 24px;
 }
 
-.book__img{
-    max-height: 380px;
-    transition: all 300ms ease;
-    cursor: not-allowed;
+.book__img {
+  max-height: 380px
+  transition: all 300ms ease;
+  cursor: not-allowed;
 }
 
-.book__img--wrapper{
-    margin-bottom: 8px;
-    border-radius: 4px;
-    overflow: hidden;
-    display: flex;
+.book__img--wrapper {
+  margin-bottom: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
 }
 
-.book:hover .book__img{
-    transform: scale(1.03);
+.book:hover .book__img {
+  transform: scale(1.03);
 }
 
-.book__title{
-    font-size: 20px;
-    margin-bottom: 8px;
+.book__title {
+  font-size: 20px;
+  margin-bottom: 8px;
 }
 
-.book__title:hover{
-    text-decoration: underline;
-    cursor: not-allowed;
+.book__title:hover {
+  text-decoration: underline;
+  cursor: not-allowed;
 }
 
-.book__ratings{
-    margin-bottom: 8px;
-    color: #fabf2a;
+.book__ratings {
+  margin-bottom: 8px;
+  color: #fabf2a;
 }
 
-.book__price--normal{
-    text-decoration: line-through;
-    padding-right: 6px;
-    color: #bfbfbf;
+.book__price--normal {
+  text-decoration: line-through;
+  padding-right: 6px;
+  color: #bfbfbf;
 }
 
 /* 
@@ -425,9 +425,46 @@ footer{
     padding: 0 8px;
 }
 
+
 /*
 
-Responsivness
+SMALL PHONES, TABLETS, LARGE SMARTPHONES
+
+*/
+
+@media (max-width: 768px){
+    .header__description{
+        padding: 0 24px;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    h2{
+        font-size: 26px;
+    }
+
+    button{
+        font-size: 18px;
+    }
+
+    .book{
+        width: 50%;
+    }
+
+    .highlight__wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
+
+/*
+
+SMALL PHONES, LARGE SMARTPHONES
 
 */
 
@@ -439,4 +476,13 @@ Responsivness
     .btn__menu{
         display: block;
     }
+
+    .highlight{
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .highlight:not(:last-child) {
+        margin-bottom: 24px;
+      }
 }
